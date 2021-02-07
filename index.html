@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60"  class="shortPage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html"><img src="assets/img/littleplane.jpg" alt="Home" width="150" height="80"></a>
+
+
+            </div>
+            <div class="">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="flights.html">Flights</a>
+                    </li>
+                    <li>
+                        <a href="reservations.html">Reservations</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="login2.html">Login2</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Signup</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron text-center">
+            <form action="">
+                <div class="container">
+                    <h1>Airline Reservations</h1>
+                    <p>
+                        Where would you like to fly to?
+                    </p>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" value="roundtrip">Round Trip <br>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" value="oneway">One way <br>
+                    </label>
+
+                </div>
+                <br>
+                <div class="form-inline">
+                    <select name="Guests" class="form-control"  placeholder="Guests" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                     </select>
+                     <select name="From" class="form-control" placeholder="From" required>
+                        <option value="Dallas">Dallas</option>
+                        <option value="New York">New York</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Los Angeles">Los Angeles</option> 
+                      </select>
+                      <select name="To" class="form-control"  placeholder="To" required>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="New York">New York</option>
+                        <option value="Dallas">Dallas</option>
+                      </select>
+                      <button type="submit" class="btn btn-danger">Search Flights</button>
+                    
+                </div>  
+                
+            </form>
+            <footer class="container-fluid text-center">
+             <p>All Rights Reserved </p>
+            </footer>
+
+    </div>
+    
+</body>
+</html>
