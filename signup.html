@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html"><img src="assets/img/littleplane.jpg" alt="Home" width="150" height="80"></a>
+
+
+            </div>
+            <div class="">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Sign Up </h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-sm-offset-4 col-xs-offset-2 col-md-offset-4" >
+                    <form action="signup.php" method="post" class="form" role="form">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <label for = "firstname">First Name: </label><input class="form-control" name="firstname" id = "firstname" placeholder="First Name" type="text" required autofocus />
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                           <label for = "lasttname">Last Name: </label><input class="form-control" name="lastname" id = "lastname" placeholder="Last Name" type="text" required />
+                        </div>
+                    </div>
+                     <label for = "email">Email: </label><input class="form-control" name="email" id = "email" placeholder="Your Email" type="email" />
+                     <label for = "password">Password: </label><input class="form-control" name="password" id= "password" placeholder="New Password" type="password" required/>
+                     <label for = "confirmpassword">Confirm Password: </label><input class="form-control" name="confirmpassword" id= "confirmpassword" data-match="#password" data-match-error="Whoops, these don't match" placeholder="Confirm Password" type="password" />
+                    <label for="birthdate">
+                        Birth Date</label>
+                       <input class = "form-control" name="birthdate" placeholder="Birthdate" type="date" required/>
+                    <br >
+                    <br >
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                        Sign up</button>
+                    </form>
+                </div>
+            </div>   
+    </div>
+
+                
+            </form>
+            <footer class="container-fluid text-center">
+             <p>All Rights Reserved </p>
+            </footer>
+
+    </div>
+    
+</body>
+</html>
