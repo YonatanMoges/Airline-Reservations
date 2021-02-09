@@ -1,88 +1,172 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airline Reservation</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/jquery.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="index.html"><img src="assets/img/littleplane.jpg" alt="Home" width="150" height="80"></a>
-
-
-            </div>
-            <div class="">
-                <ul class="nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-    </nav>
-
-    <div class="jumbotron text-center">
-        <h1>Add Flight</h1>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-sm-offset-4 col-xs-offset-2 col-md-offset-4" >
-                    <form class="form" role="form" action="" method ="POST">
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for = "flight_no">Flight Number: 
-                                        
-                                    </label>
-                                    <input class="form-control" name="flight_no" id = "flight_no" placeholder="Flight Number" /></td>
-                            <td><label for = "flight_Instance">Flight Instance: </label><input class="form-control" name="flight_Instance" id= "flight_Instance" placeholder="Flight Instance"  /></td>
-                            </tr>
-                            <tr>
-                            <td><label for = "from">From Airport Id: </label><input class="form-control" name="from" id = "from" placeholder="From Airport Id"  /> </td>
-                            <td> <label for = "to">To Airport Id: </label><input class="form-control" name="to" id= "to" placeholder="To Airport Id"  /></td>
-                            </tr>
-                            <tr>
-                            <td><label for = "fromCity">From City: </label><input class="form-control" name="fromCity" id = "fromCity" placeholder="From City"  /> </td>
-                            <td> <label for = "toCity">To City: </label><input class="form-control" name="toCity" id= "toCity" placeholder="To City"  /></td>
-                            </tr>
-                            <tr>
-                            <td><label for = "fromState">From State: </label><input class="form-control" name="fromState" id = "fromState" placeholder="From State"  /> </td>
-                            <td> <label for = "toState">To State: </label><input class="form-control" name="toState" id= "toState" placeholder="To State"  /></td>
-                            </tr>
-                            <tr>
-                            <td><label for = "category">Category: </label><input class="form-control" name="category" id = "category" placeholder="Category"  /></td>
-                            <td><label for = "seats">seat Availability: </label><input class="form-control" name="seats" id = "seats" placeholder="Available Seats"  /></td>
-                            </tr>
-                            <tr>
-                            <td><label for = "depart_time">Departure Time: </label><input class="form-control" name="depart_time" id = "depart_time" placeholder="Departure Time" type="time"/></td>
-                            <td><label for = "arrive_time">Arrival Time: </label><input class="form-control" name="arrive_time" id= "arrive_time" placeholder="Arrival Time" type="time"/></td>
-                            </tr>
-                            <tr>
-                            <td> <label for = "arrive_date">Arrival Date: </label><input class="form-control" name="arrive_date" id= "arrive_date" placeholder="Arrival Date"  type="date"/></td>
-                            <td> <label for = "depart_date">Departure Date: </label><input class="form-control" name="depart_date" id= "depart_date" placeholder="Departure Date"  type="date"/></td>
-                            </tr>
-                        </table>
-                        
-                        <br/>
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Add</button>
-                    </form>
-                </div>
-         </div>   
-        </div>
-                
-            </form>
-            <footer class="container-fluid text-xs-center">
-             <p>All Rights Reserved </p>
-            </footer>
-
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Airline Reservation</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/jquery.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html"><img src="assets/img/littleplane.jpg" alt="Home" width="150" height="80"></a>
     
-</body>
+    
+                </div>
+                <div class="">
+                    <ul class="nav navbar-default navbar-right px-3">
+                        <li class="px-3">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="px-3">
+                            <a href="flights.html">Flights</a>
+                        </li>
+                        <li class="px-3">
+                            <a href="reservations.html">Reservations</a>
+                        </li>
+                        <li class="px-3">
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li class="px-3">
+                            <a href="login2.html">Login2</a>
+                        </li>
+                        <li class="px-3">
+                            <a href="signup.html">Signup</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+    
+        </nav>
+
+        <div class="jumbotron text-center">
+            <h1>Add flights</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 offset-sm-4 offset-xs-2 offset-md-4">
+                    <form action="" method="POST" class="form" role="form">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for="flight_no">
+                                    Flight Number:
+                                </label>
+                                <input class="form-control" name="flight_no" id = "flight_no" placeholder="Flight Number" type="number">
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for="flight_Instance">
+                                    Flight Instance:    
+                                </label>
+                                <input class="form-control" name="flight_Instance" id= "flight_Instance" placeholder="Flight Instance" type="text">
+    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "from">
+                                    From Airport Id: 
+                                </label>
+                                <input class="form-control" name="from" id = "from" placeholder="From Airport Id" > 
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "to">
+                                    To Airport Id: 
+                                </label>
+                                <input class="form-control" name="to" id= "to" placeholder="To Airport Id">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "fromCity">
+                                    From City: 
+                                </label>
+                                <input class="form-control" name="fromCity" id = "fromCity" placeholder="From City"> 
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "toCity">
+                                    To City:
+                                </label>
+                                <input class="form-control" name="toCity" id= "toCity" placeholder="To City">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "fromState">
+                                    From State: 
+                                </label>
+                                <input class="form-control" name="fromState" id = "fromState" placeholder="From State"> 
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "toState">
+                                    To State: 
+                                </label>
+                                <input class="form-control" name="toState" id= "toState" placeholder="To State">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "category">
+                                    Category: 
+                                </label>
+                                <input class="form-control" name="category" id = "category" placeholder="Category" >
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "seats">
+                                    seat Availability:
+                                </label>
+                                <input class="form-control" name="seats" id = "seats" placeholder="Available Seats">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "depart_time">
+                                    Departure Time:
+                                </label>
+                                <input class="form-control" name="depart_time" id = "depart_time" placeholder="Departure Time" type="time">
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "arrive_time">
+                                    Arrival Time: 
+                                </label>
+                                <input class="form-control" name="arrive_time" id= "arrive_time" placeholder="Arrival Time" type="time">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "arrive_date">
+                                    Arrival Date: 
+                                </label>
+                                <input class="form-control" name="arrive_date" id= "arrive_date" placeholder="Arrival Date"  type="date">
+                            </div>
+                            <div class="col-xs-6 col-md-6">
+                                <label for = "depart_date">
+                                    Departure Date: 
+                                </label>
+                                <input class="form-control" name="depart_date" id= "depart_date" placeholder="Departure Date"  type="date">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">
+                            Add
+                        </button>
+                        
+                    </form>
+                    <br>
+                    <footer>
+                        <p>All Rights Reserved.</p>
+                    </footer>
+                </div>
+    
+            </div>
+    
+        </div>
+
+        
+        
+    </body>
 </html>
