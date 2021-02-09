@@ -19,9 +19,24 @@
 
             </div>
             <div class="">
-                <ul class="nav">
-                    <li>
+                <ul class="nav navbar-default navbar-right px-3">
+                    <li class="px-3">
                         <a href="index.html">Home</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="flights.html">Flights</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="login2.html">Login2</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="signup.html">Signup</a>
                     </li>
                 </ul>
 
@@ -30,41 +45,65 @@
 
     </nav>
 
+
     <div class="jumbotron text-center">
-        <h1>Sign Up </h1>
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-sm-offset-4 col-xs-offset-2 col-md-offset-4" >
-                    <form action="signup.php" method="post" class="form" role="form">
+        <h2>Signup</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 offset-sm-4 offset-xs-2 offset-md-4">
+                <form action="" method="POST" class="form" role="form">
                     <div class="row">
                         <div class="col-xs-6 col-md-6">
-                            <label for = "firstname">First Name: </label><input class="form-control" name="firstname" id = "firstname" placeholder="First Name" type="text" required autofocus />
+                            <label for="firstname">
+                                First Name:
+                            </label>
+                            <input class="form-control" name="firstname" id = "firstname" placeholder="First Name" type="text" required autofocus>
+
                         </div>
                         <div class="col-xs-6 col-md-6">
-                           <label for = "lasttname">Last Name: </label><input class="form-control" name="lastname" id = "lastname" placeholder="Last Name" type="text" required />
-                        </div>
-                    </div>
-                     <label for = "email">Email: </label><input class="form-control" name="email" id = "email" placeholder="Your Email" type="email" />
-                     <label for = "password">Password: </label><input class="form-control" name="password" id= "password" placeholder="New Password" type="password" required/>
-                     <label for = "confirmpassword">Confirm Password: </label><input class="form-control" name="confirmpassword" id= "confirmpassword" data-match="#password" data-match-error="Whoops, these don't match" placeholder="Confirm Password" type="password" />
-                    <label for="birthdate">
-                        Birth Date</label>
-                       <input class = "form-control" name="birthdate" placeholder="Birthdate" type="date" required/>
-                    <br >
-                    <br >
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">
-                        Sign up</button>
-                    </form>
-                </div>
-            </div>   
-    </div>
+                            <label for="lastname">
+                                Last Name:
+                            </label>
+                            <input class="form-control" name="lastname" id = "lastname" placeholder="Last Name" type="text" required autofocus>
 
-                
-            </form>
-            <footer class="container-fluid text-center">
-             <p>All Rights Reserved </p>
-            </footer>
+                        </div>
+
+                        <div class="col-xs-12 col-md-12">
+                            <label for="email">
+                                Email:
+                            </label>
+                            <input class="form-control" name="email" id = "email" placeholder="Your Email" type="email" required autofocus>
+                            <label for="password">
+                                Password:
+                            </label>
+                            <input class="form-control" name="password" id= "password" placeholder="New Password" type="password"type="password" required autofocus>
+                            <label for="password">
+                                Confirm Password:
+                            </label>
+                            <input  class="form-control" name="confirmpassword" id= "confirmpassword" data-match="#password" data-match-error="Passwords don't match" placeholder="Confirm Password"type="password" required autofocus>
+                            <label for="birthdate">
+                                Birth Date:
+                            </label>
+                            <input  class = "form-control" name="birthdate" placeholder="Birthdate" type="date" required autofocus>
+                            <br>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                                Sign up
+                            </button>
+                        </div>
+                        
+
+                    </div>
+                </form>
+                <footer class="container-fluid text-center">
+                    <p class="text-center">All Rights Reserved </p>
+                </footer>
+
+            </div>
+
+        </div>
 
     </div>
     
-</body>
+    
+
+    </body>
 </html>
