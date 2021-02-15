@@ -19,9 +19,24 @@
 
             </div>
             <div class="">
-                <ul class="nav">
-                    <li>
+                <ul class="nav navbar-default navbar-right px-3">
+                    <li class="px-3">
                         <a href="index.html">Home</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="flights.html">Flights</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="reservations.html">Reservations</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="login2.html">Login2</a>
+                    </li>
+                    <li class="px-3">
+                        <a href="signup.html">Signup</a>
                     </li>
                 </ul>
 
@@ -30,14 +45,80 @@
 
     </nav>
 
-
-                
-            </form>
-            <footer class="container-fluid text-xs-center">
-             <p>All Rights Reserved </p>
-            </footer>
-
+    <div class="jumbotron text-center">
+        <br>
+        <br>
+        <br>
+        <br>
+          
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Flight No.</th>
+                    <th scope="col">Flight Name</th>
+                    <th scope="col">From City</th>
+                    <th scope="col">To City</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Airport Name</th>
+                    <th scope="col">Ticket Price</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th> 
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td><i class="fas fa-edit"></i></i></td>
+                    <td><i class="fas fa-trash-alt" id="btndelete"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr> -->
+                </tbody>
+              </table>
+              <div class="container">
+                <button input type="button" class="btn btn-primary" id="btn-view">View</button>
+              </div>
+              <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <p>All Rights Reserved.</p>
+        </footer>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+        <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+        <script src="assets/js/app.js" type="module"></script>
 </body>
 </html>
