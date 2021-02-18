@@ -8,6 +8,8 @@ let db = productdb("Productdb",{
     products:`++index,flight_name,from_city,to_city,date,time,airport_name,ticket_price`
 });
 
+
+
 //input tags
 const flight_no=document.getElementById("flight_no")
 const flight_Instance=document.getElementById("flight_Instance")
@@ -143,3 +145,4 @@ const ticketprice=document.getElementById("ticket_price")
      db.products.delete(index);
      table();
  }
+
