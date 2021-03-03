@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ 
+.source{
+    width:250px;
+    padding:5px;
+    border:none;
+    border-bottom:1px solid #0d928b;
+    cursor:pointer;
+}
+.book-form{
+    display: grid;
+    grid-template-columns:250px 10px 250px 10px 250px;
+}
+.source-span{
+    grid-column:1;
+}
+.destination-span{
+    grid-column:3;
+}
+.calendar-span{
+   grid-column:5; 
+    padding:5px;
+    margin-top:10px;
+    border:none;
+}
+.btn-book,.search-tickets{
+    width:150px;
+    padding:10px;
+    margin-top:20px;
+    grid-column:4/span 1;
+    margin-left:10px;
+    cursor:pointer;
+    background:#0d928b;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+
+.manage-booking{
+    display:grid;
+    grid-template-columns:250px 10px 250px;
+    grid-template-rows:50px 10px auto;
+
+}
+
+.ticket-reference-span{
+    grid-column:1;
+    grid-row:3;
+}
+.last-name-span{
+    grid-column:3;
+    grid-row:3;
+}
+.search-tickets{
+    grid-row:3;
+}
+.new-header{
+grid-column:1;
+grid-row:1;    
+
+}
+ 
+.ticket-ref,.last-name{
+    border:none;
+    border-bottom:2px solid #0d928b;
+    width:250px;
+    padding:10px;
+}
+.flights{
+    padding:10px;
+    margin-left:-110px;
+}
+.flights td{
+    padding:10px;
+}
+.btn-flight-book{
+    background:#0d928b;
+    border:none;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+}
+.btn-flight-cancel{
+    background:#0d928b;
+    border:none;
+    color:white;
+    padding:10px;
+    cursor: pointer;
+}
+.flight-class-selector{
+    padding:5px;
+    cursor:pointer;
+}
+.number{
+    padding: 5px;
+}

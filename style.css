@@ -1,0 +1,129 @@
+@import "book.css";
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+    background:#ffcc;
+}
+ 
+.menu-section{
+    margin-top:-40px;
+}
+.menu li{
+    list-style:none;
+    display:inline-block;
+}
+.menu button{
+    color:white;
+    background:none;
+    border:none;
+    padding:10px;
+    margin-top:0;
+    cursor:pointer;
+    border-bottom:2px solid transparent;
+}
+.menu button:hover{
+    border-bottom: 2px solid yellow;
+    transition: all  0.2s ease-in-out;
+}
+.header-section{
+    background: #0d928b;
+    color:white;
+    text-align:center;
+    padding:35px;
+    display:inline-block;
+    width:100%; 
+}
+.header-section h2{
+    border:2px solid white;
+    width:100px;
+    padding:5px;
+    cursor:pointer;
+}
+.container{
+    display:grid;
+    grid-template-columns:150px 700px 10px 300px;
+    grid-template-rows:10px 450px;
+}
+.nully{
+    grid-column:1;
+    width:350px;
+    height:100%;
+    grid-row:1/span 2;
+    background: url(images/cloud.png);
+    background-size: contain;
+    background-position:bottom;
+    background-repeat:no-repeat;
+}
+.content-section{
+    grid-column:2;
+    grid-row:2;
+    /* margin-top:-30px; */
+}
+.notice-section{
+    grid-column:4;
+    grid-row:2;
+    z-index:-100;
+    background: url(images/cloud.png);
+    background-position:bottom;
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+.text{
+    width:200px;
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-bottom:2px solid #0d928b;
+}
+.textTime{
+    width:150px;
+    padding:10px;
+    margin-top:10px;
+    border:none;
+    border-bottom:2px solid #0d928b;
+}
+.btn-submit{
+width:200px;
+padding:10px;
+margin-top:10px;
+margin-left:10px; 
+cursor: pointer;  
+color:white;
+background:#0d928b;
+border:none;
+}
+.plane-view{
+    position: absolute;
+    top:300px;
+    left:350px;
+    background:url(images/Plane.png);
+    background-size:contain;
+    width:700px;
+    height:300px;
+    z-index:-100;
+    transform:rotate(-5deg) ;
+
+}
+.btn-login{
+    width:200px;
+    padding:10px;
+    margin-top:10px;
+    margin-left:80px; 
+    cursor: pointer;  
+    color:white;
+    background:#0d928b;
+    border:none;
+}
+.clear-btn{
+    width:50%;
+    padding:10px;
+    margin-top:10px;
+    margin-left:10px; 
+    cursor: pointer;  
+    color:white;
+    background:#92420d;
+    border:none;
+}

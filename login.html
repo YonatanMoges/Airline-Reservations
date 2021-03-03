@@ -1,91 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airline Reservation</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/jquery.js"></script>
+
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="index.html"><img src="assets/img/littleplane.jpg" alt="Home" width="150" height="80"></a>
+     
+    <div class="header-section">
+        <h2 class="top-header">Login</h2>
+        <div class="menu-section">
+            <ul class="menu">
 
-
-            </div>
-            <div class="">
-                <ul class="nav navbar-default navbar-right px-3">
-                    <li class="px-3">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="px-3">
-                        <a href="flights.html">Flights</a>
-                    </li>
-                    <li class="px-3">
-                        <a href="reservations.html">Reservations</a>
-                    </li>
-                    <li class="px-3">
-                        <a href="login.html">Login</a>
-                    </li>
-                    <li class="px-3">
-                        <a href="login2.html">Login2</a>
-                    </li>
-                    <li class="px-3">
-                        <a href="signup.html">Signup</a>
-                    </li>
-                </ul>
-
-            </div>
+        </ul>
         </div>
-
-    </nav>
-
-    
-
-    <div class="jumbotron text-center">
-        <h2>User Login</h2>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 offset-sm-4 offset-xs-2 offset-md-4">
-                <form action="" method="POST" class="form" role="form">
-                    <label for="email">
-                        Email:
-                    </label>
-                    <br>
-                    <input class="form-control" name="email" id = "email" placeholder="Username" type="email">
-                    <br>
-                    <label for="password">
-                        Password:
-                    </label>
-                    <br>
-                    <input class="form-control" name="password" id= "password" placeholder="Password" type="password">
-                    <br>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
-                    <br>
-                    <br>
-                    <br>
-                    <p>If you haven't signed up yet, click on Sign up below.</p>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit"><a href="signup.html">Signup</a></button>
-                </form>
-            </div>
+    </div>
+    <div class="container">
+        <div class="nully">
 
         </div>
-        
-        <footer class="container-fluid">
-            <p>All Rights Reserved </p>
-        </footer>
-
+        <div id="content-section" class="content-section">
+            <h2 class="login-header">
+            Booking Details        
+            </h2>
+            
+           <div class="login-details">
+                username:<input type="text" class="text" id="username" placeholder="enter username" >
+                <br>
+                password:<input type="password" id="password" class="text" placeholder="******">
+            <br>
+            </div>
+           <button class="btn-login" id="btn-login">Login</button>
+        </div>
+        <div class="notice-section">
+        </div>
+    </div>
+    <div class="plane-view">
 
     </div>
-
-    
-        
-        
-    
-    
 </body>
+<script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+<script src="login.js"></script>
 </html>

@@ -12,17 +12,7 @@
     <div class="header-section">
         <h2 class="top-header">E-flight</h2>
         <div class="menu-section">
-            <ul class="menu">
-                <button id="home">
-                    <li class="menu-items">Home</li>
-                </button>
-                <button id="book">
-                    <li class="menu-items"> Book A Flight</li>
-                </button>
-                <button id="Manageflight">
-                    <li class="menu-items" >Manage Booking</li>
-                </button>
-            </ul>
+          
         </div>
     </div>
     <div class="container">
@@ -35,11 +25,12 @@
                 <h2 class="header">
                   E-flight
                 </h2>
-                
-               <p>welcome to E-Flight we provide the best service with affordable pricing. 
-                   Book and manage your Flight with ease from the comfort of your home 
-                    arrive with a screen shot of your ticket details.s
-                </p>             
+                <div class="search">
+                    Ticket Ref: <input type="text" class="text" id="ticketRef">
+                    <br>
+                    <button class="btn-login" id="search">Search</button>
+                </div>
+                             
              
         </div>
         <div class="notice-section">
@@ -52,5 +43,5 @@
 </body>
 <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
 
-<script src="main.js"></script>
+<script src="checker.js"></script>
 </html>

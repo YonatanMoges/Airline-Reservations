@@ -49,70 +49,44 @@
     </nav>
 
     <div class="jumbotron text-center">
-        <br>
-        <br>
-        <br>
-        <br>
-          
-        <div class="container">
-            <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">Flight No.</th>
-                    <th scope="col">Flight Name</th>
-                    <th scope="col">From City</th>
-                    <th scope="col">To City</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Airport Name</th>
-                    <th scope="col">Ticket Price</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th> 
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  <!-- <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td><i class="fas fa-edit"></i></i></td>
-                    <td><i class="fas fa-trash-alt" id="btndelete"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr> -->
-                </tbody>
-              </table>
-              
-              <div class="container">
-                <button input type="button" class="btn btn-primary" id="btn-view">View</button>
-              </div>
-              <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <footer>
-            <p>All Rights Reserved.</p>
+        <h2>Admin Login</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 offset-sm-4 offset-xs-2 offset-md-4">
+                <form action="adminhome.html" method="POST" class="form" id="form" role="form">
+                    <label for="email">
+                        Email:
+                    </label>
+                    <br>
+                    <input class="form-control" name="email" id = "adminEmail" placeholder="Your Email" type="email">
+                    <br>
+                    <label for="password">
+                        Password:
+                    </label>
+                    <br>
+                    <input class="form-control" name="password" id= "adminPassword" placeholder="Password" type="password">
+                    <br>
+                    <button class="btn btn-lg btn-primary btn-block" id="login" type="submit">Log In</button>
+
+                </form>
+
+            </div>
+        </div>
+
+
+        <footer class="container-fluid">
+            <p class="">All Rights Reserved </p>
         </footer>
+        
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
+      
+
+                
+        
+      
+    </div>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -123,6 +97,6 @@
         </script>
 
         <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
-        <script src="assets/js/app.js" type="module"></script>
+        <script src="assets/js/admin.js" type="module"></script>
 </body>
 </html>
